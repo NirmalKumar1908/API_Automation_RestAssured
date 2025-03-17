@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [GRAVITY WRITE API AUTOMATION]">
+  <listeners>
+    <listener class-name="api.utilities.AuthUtilities.ExtentReportManager"/>
+  </listeners>
+  <test thread-count="5" name="Single Prompt Tests(failed)">
+    <classes>
+      <class name="api.test.SinglePromptTests.ContentsNewTests">
+        <methods>
+          <include name="testStreamAPI" invocation-numbers="0 2"/>
+        </methods>
+      </class> <!-- api.test.SinglePromptTests.ContentsNewTests -->
+    </classes>
+  </test> <!-- Single Prompt Tests(failed) -->
+</suite> <!-- Failed suite [GRAVITY WRITE API AUTOMATION] -->

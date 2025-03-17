@@ -1,0 +1,31 @@
+<suite name="GRAVITY WRITE API AUTOMATION">
+
+	<!-- Authentication Module -->
+	<test name="Authentication Tests">
+		<listeners>
+			<listener
+				class-name="api.utilities.AuthUtilities.ExtentReportManager" />
+		</listeners>
+		<classes>
+			<class name="api.test.AuthTests.LoginTests" />
+			<class name="api.test.AuthTests.RegisterTests" />
+			<class name="api.test.AuthTests.GetUserTests" />
+			<class name="api.test.AuthTests.ForgotPasswordTests" />
+<!--			<class name="api.test.AuthTests.ResetPasswordTests" />-->
+		</classes>
+	</test>
+
+	<!-- Single Prompt Module -->
+	<test name="Single Prompt Tests">
+		<listeners>
+			<listener
+				class-name="api.utilities.AuthUtilities.ExtentReportManager" />
+		</listeners>
+		<classes>
+			<class name="api.test.SinglePromptTests.PromptListTests" />
+			<class name="api.test.SinglePromptTests.CategoryListTests" />
+			<class name="api.test.SinglePromptTests.ContentsNewTests" />
+		</classes>
+	</test>
+
+</suite>

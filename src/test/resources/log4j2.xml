@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+    
+    <Properties>
+        <Property name="basePath">./logs</Property>
+    </Properties>
+
+    <Appenders>
+        <!-- Console Appender -->
+        <Console name="Console" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </Console>
+
+        <!-- File Appender with Rolling Policy -->
+        <RollingFile name="File" fileName="${basePath}/automation.log" 
+                     filePattern="${basePath}/automation-%d{yyyy-MM-dd}.log.gz">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+            <SizeBasedTriggeringPolicy size="50000"/>
+        </RollingFile>
+    </Appenders>
+
+    <Loggers>
+        <Root level="info">
+            <AppenderRef ref="File"/>
+            <!-- Uncomment the next line if you also want logs to appear in the console -->
+            <!-- <AppenderRef ref="Console"/> -->
+        </Root>
+    </Loggers>
+
+</Configuration>

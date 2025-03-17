@@ -1,0 +1,260 @@
+<html>
+<head>
+<title>TestNG:  Authentication Tests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Authentication Tests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>15/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Mar 17 11:43:25 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>17 seconds (17233 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='api.test.AuthTests.RegisterTests.testInvalidUserRegister()'><b>testInvalidUserRegister</b><br>Test class: api.test.AuthTests.RegisterTests<br>Parameters: , , , 422<br/>
+<a href="#Output-263373555" onClick='toggleBox("Output-263373555", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-263373555" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-263373555">
+Invalid Register API tested with email: <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>api.test.AuthTests.RegisterTests@56c698e3</td></tr>
+<tr>
+<td title='api.test.AuthTests.RegisterTests.testValidUserRegister()'><b>testValidUserRegister</b><br>Test class: api.test.AuthTests.RegisterTests<br>Parameters: testuser1742192014176@wl.com, Test@12345, User One, 401<br/>
+<a href="#Output-1984803180" onClick='toggleBox("Output-1984803180", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1984803180" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1984803180">
+Valid Register API tested with email: testuser1742192014176@wl.com<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>api.test.AuthTests.RegisterTests@56c698e3</td></tr>
+<tr>
+<td title='api.test.AuthTests.ForgotPasswordTests.testForgotPassword()'><b>testForgotPassword</b><br>Test class: api.test.AuthTests.ForgotPasswordTests<br>Parameters: Empty Email, " ", 405<br/>
+<a href="#Output-1099556456" onClick='toggleBox("Output-1099556456", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1099556456" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1099556456">
+Test Data: TestCase=Empty Email, Email=" ", ExpectedStatusCode=405<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>api.test.AuthTests.ForgotPasswordTests@f478a81</td></tr>
+<tr>
+<td title='api.test.AuthTests.RegisterTests.testInvalidUserRegister()'><b>testInvalidUserRegister</b><br>Test class: api.test.AuthTests.RegisterTests<br>Parameters: invalidemail, Test@1234, Test User, 422<br/>
+<a href="#Output-1926148075" onClick='toggleBox("Output-1926148075", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1926148075" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1926148075">
+Invalid Register API tested with email: invalidemail<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>api.test.AuthTests.RegisterTests@56c698e3</td></tr>
+<tr>
+<td title='api.test.AuthTests.ForgotPasswordTests.testForgotPassword()'><b>testForgotPassword</b><br>Test class: api.test.AuthTests.ForgotPasswordTests<br>Parameters: Valid Forgot Password, websitelearnertest@gmail.com, 200<br/>
+<a href="#Output-840661918" onClick='toggleBox("Output-840661918", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-840661918" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-840661918">
+Test Data: TestCase=Valid Forgot Password, Email=websitelearnertest@gmail.com, ExpectedStatusCode=200<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>api.test.AuthTests.ForgotPasswordTests@f478a81</td></tr>
+<tr>
+<td title='api.test.AuthTests.RegisterTests.testInvalidUserRegister()'><b>testInvalidUserRegister</b><br>Test class: api.test.AuthTests.RegisterTests<br>Parameters: testuser1@gmail.com, , Test User, 409<br/>
+<a href="#Output-1179968371" onClick='toggleBox("Output-1179968371", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1179968371" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1179968371">
+Invalid Register API tested with email: testuser1@gmail.com<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>api.test.AuthTests.RegisterTests@56c698e3</td></tr>
+<tr>
+<td title='api.test.AuthTests.RegisterTests.testInvalidUserRegister()'><b>testInvalidUserRegister</b><br>Test class: api.test.AuthTests.RegisterTests<br>Parameters: , Test@1234, Test User, 422<br/>
+<a href="#Output-175881660" onClick='toggleBox("Output-175881660", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-175881660" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-175881660">
+Invalid Register API tested with email: <br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>api.test.AuthTests.RegisterTests@56c698e3</td></tr>
+<tr>
+<td title='api.test.AuthTests.LoginTests.testUserLogin()'><b>testUserLogin</b><br>Test class: api.test.AuthTests.LoginTests<br>Parameters: Valid Login, websitelearnertest@gmail.com, Website@123, 200<br/>
+<a href="#Output-832248951" onClick='toggleBox("Output-832248951", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-832248951" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-832248951">
+Test Data: TestCase=Valid Login, Email=websitelearnertest@gmail.com, ExpectedStatusCode=200<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>api.test.AuthTests.LoginTests@4a11eb84</td></tr>
+<tr>
+<td title='api.test.AuthTests.ForgotPasswordTests.testForgotPassword()'><b>testForgotPassword</b><br>Test class: api.test.AuthTests.ForgotPasswordTests<br>Parameters: Unregistered Email, wrongemail@gmail.com, 405<br/>
+<a href="#Output-1210231629" onClick='toggleBox("Output-1210231629", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1210231629" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1210231629">
+Test Data: TestCase=Unregistered Email, Email=wrongemail@gmail.com, ExpectedStatusCode=405<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>api.test.AuthTests.ForgotPasswordTests@f478a81</td></tr>
+<tr>
+<td title='api.test.AuthTests.RegisterTests.testValidUserRegister()'><b>testValidUserRegister</b><br>Test class: api.test.AuthTests.RegisterTests<br>Parameters: userexample1742192014176@wl.com, SecurePass@4567, User Example, 401<br/>
+<a href="#Output-826884252" onClick='toggleBox("Output-826884252", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-826884252" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-826884252">
+Valid Register API tested with email: userexample1742192014176@wl.com<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>api.test.AuthTests.RegisterTests@56c698e3</td></tr>
+<tr>
+<td title='api.test.AuthTests.ForgotPasswordTests.testForgotPassword()'><b>testForgotPassword</b><br>Test class: api.test.AuthTests.ForgotPasswordTests<br>Parameters: Invalid Email Format, invalidemailformat, 405<br/>
+<a href="#Output-2039166717" onClick='toggleBox("Output-2039166717", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2039166717" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2039166717">
+Test Data: TestCase=Invalid Email Format, Email=invalidemailformat, ExpectedStatusCode=405<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>api.test.AuthTests.ForgotPasswordTests@f478a81</td></tr>
+<tr>
+<td title='api.test.AuthTests.RegisterTests.testInvalidUserRegister()'><b>testInvalidUserRegister</b><br>Test class: api.test.AuthTests.RegisterTests<br>Parameters: websitelearnertest@gmail.com, Test@1234, Test User, 409<br/>
+<a href="#Output-1097558044" onClick='toggleBox("Output-1097558044", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1097558044" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1097558044">
+Invalid Register API tested with email: websitelearnertest@gmail.com<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>api.test.AuthTests.RegisterTests@56c698e3</td></tr>
+<tr>
+<td title='api.test.AuthTests.GetUserTests.testGetUserWithValidToken()'><b>testGetUserWithValidToken</b><br>Test class: api.test.AuthTests.GetUserTests<br/>
+<a href="#Output-479788655" onClick='toggleBox("Output-479788655", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-479788655" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-479788655">
+Get User API called successfully with token: 3506107|L24XLLzZiNc4VVS9I8YG4VzgAzBzsY4d5evkCKQxb6074442<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>api.test.AuthTests.GetUserTests@47a86fbb</td></tr>
+<tr>
+<td title='api.test.AuthTests.RegisterTests.testInvalidUserRegister()'><b>testInvalidUserRegister</b><br>Test class: api.test.AuthTests.RegisterTests<br>Parameters: testuser1@gmail.com, Test@1234, , 409<br/>
+<a href="#Output-1391240208" onClick='toggleBox("Output-1391240208", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1391240208" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1391240208">
+Invalid Register API tested with email: testuser1@gmail.com<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>api.test.AuthTests.RegisterTests@56c698e3</td></tr>
+<tr>
+<td title='api.test.AuthTests.RegisterTests.testInvalidUserRegister()'><b>testInvalidUserRegister</b><br>Test class: api.test.AuthTests.RegisterTests<br>Parameters: user@example.com, short, Test User, 409<br/>
+<a href="#Output-1081819622" onClick='toggleBox("Output-1081819622", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1081819622" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1081819622">
+Invalid Register API tested with email: user@example.com<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>api.test.AuthTests.RegisterTests@56c698e3</td></tr>
+</table><p>
+</body>
+</html>

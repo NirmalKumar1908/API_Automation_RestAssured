@@ -1,0 +1,881 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="24" passed="24" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Test Data: TestCase=Valid Login, Email=websitelearnertest@gmail.com, ExpectedStatusCode=200]]>
+    </line>
+    <line>
+      <![CDATA[Invalid Register API tested with email: ]]>
+    </line>
+    <line>
+      <![CDATA[Invalid Register API tested with email: testuser1@gmail.com]]>
+    </line>
+    <line>
+      <![CDATA[Invalid Register API tested with email: testuser1@gmail.com]]>
+    </line>
+    <line>
+      <![CDATA[Invalid Register API tested with email: invalidemail]]>
+    </line>
+    <line>
+      <![CDATA[Invalid Register API tested with email: user@example.com]]>
+    </line>
+    <line>
+      <![CDATA[Invalid Register API tested with email: websitelearnertest@gmail.com]]>
+    </line>
+    <line>
+      <![CDATA[Invalid Register API tested with email: ]]>
+    </line>
+    <line>
+      <![CDATA[Valid Register API tested with email: testuser1742193242529@wl.com]]>
+    </line>
+    <line>
+      <![CDATA[Valid Register API tested with email: userexample1742193242529@wl.com]]>
+    </line>
+    <line>
+      <![CDATA[Get User API called successfully with token: 3506367|AF05NlHawATDhJXoHQ10Su0lHXQHffE1jcx616Oj346ba824]]>
+    </line>
+    <line>
+      <![CDATA[Test Data: TestCase=Valid Forgot Password, Email=websitelearnertest@gmail.com, ExpectedStatusCode=200]]>
+    </line>
+    <line>
+      <![CDATA[Test Data: TestCase=Unregistered Email, Email=wrongemail@gmail.com, ExpectedStatusCode=405]]>
+    </line>
+    <line>
+      <![CDATA[Test Data: TestCase=Invalid Email Format, Email=invalidemailformat, ExpectedStatusCode=405]]>
+    </line>
+    <line>
+      <![CDATA[Test Data: TestCase=Empty Email, Email=" ", ExpectedStatusCode=405]]>
+    </line>
+    <line>
+      <![CDATA[ TestCase: Valid Request (Success) | Paginate=100 | Page=1 | Expected: 200 | Got: 200]]>
+    </line>
+    <line>
+      <![CDATA[Tested API with paginate=100, page=1. Expected: 200, Got: 200]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2025-03-17T12:03:54 IST" name="GRAVITY WRITE API AUTOMATION" finished-at="2025-03-17T12:04:16 IST" duration-ms="22722">
+    <groups>
+    </groups>
+    <test started-at="2025-03-17T12:03:54 IST" name="Authentication Tests" finished-at="2025-03-17T12:04:10 IST" duration-ms="16715">
+      <class name="api.test.AuthTests.GetUserTests">
+        <test-method signature="testGetUserWithValidToken()[pri:0, instance:api.test.AuthTests.GetUserTests@59252cb6]" started-at="2025-03-17T12:04:08 IST" name="testGetUserWithValidToken" finished-at="2025-03-17T12:04:09 IST" duration-ms="115" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Get User API called successfully with token: 3506367|AF05NlHawATDhJXoHQ10Su0lHXQHffE1jcx616Oj346ba824]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testGetUserWithValidToken -->
+      </class> <!-- api.test.AuthTests.GetUserTests -->
+      <class name="api.test.AuthTests.LoginTests">
+        <test-method signature="testUserLogin(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:api.test.AuthTests.LoginTests@373ebf74]" started-at="2025-03-17T12:03:54 IST" name="testUserLogin" data-provider="loginDataFromExcel" finished-at="2025-03-17T12:04:00 IST" duration-ms="5126" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Valid Login]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[websitelearnertest@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Website@123]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test Data: TestCase=Valid Login, Email=websitelearnertest@gmail.com, ExpectedStatusCode=200]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testUserLogin -->
+      </class> <!-- api.test.AuthTests.LoginTests -->
+      <class name="api.test.AuthTests.ForgotPasswordTests">
+        <test-method signature="testForgotPassword(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:api.test.AuthTests.ForgotPasswordTests@31d0e481]" started-at="2025-03-17T12:04:09 IST" name="testForgotPassword" data-provider="forgotPasswordDataFromExcel" finished-at="2025-03-17T12:04:10 IST" duration-ms="1575" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Valid Forgot Password]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[websitelearnertest@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test Data: TestCase=Valid Forgot Password, Email=websitelearnertest@gmail.com, ExpectedStatusCode=200]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testForgotPassword -->
+        <test-method signature="testForgotPassword(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:api.test.AuthTests.ForgotPasswordTests@31d0e481]" started-at="2025-03-17T12:04:10 IST" name="testForgotPassword" data-provider="forgotPasswordDataFromExcel" finished-at="2025-03-17T12:04:10 IST" duration-ms="85" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Unregistered Email]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[wrongemail@gmail.com]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[405]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test Data: TestCase=Unregistered Email, Email=wrongemail@gmail.com, ExpectedStatusCode=405]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testForgotPassword -->
+        <test-method signature="testForgotPassword(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:api.test.AuthTests.ForgotPasswordTests@31d0e481]" started-at="2025-03-17T12:04:10 IST" name="testForgotPassword" data-provider="forgotPasswordDataFromExcel" finished-at="2025-03-17T12:04:10 IST" duration-ms="95" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Invalid Email Format]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[invalidemailformat]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[405]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test Data: TestCase=Invalid Email Format, Email=invalidemailformat, ExpectedStatusCode=405]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testForgotPassword -->
+        <test-method signature="testForgotPassword(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:api.test.AuthTests.ForgotPasswordTests@31d0e481]" started-at="2025-03-17T12:04:10 IST" name="testForgotPassword" data-provider="forgotPasswordDataFromExcel" finished-at="2025-03-17T12:04:10 IST" duration-ms="78" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Empty Email]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[" "]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[405]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test Data: TestCase=Empty Email, Email=" ", ExpectedStatusCode=405]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testForgotPassword -->
+      </class> <!-- api.test.AuthTests.ForgotPasswordTests -->
+      <class name="api.test.AuthTests.RegisterTests">
+        <test-method signature="testInvalidUserRegister(java.lang.String,java.lang.String,java.lang.String,int)[pri:0, instance:api.test.AuthTests.RegisterTests@6d9f7a80]" started-at="2025-03-17T12:04:00 IST" name="testInvalidUserRegister" data-provider="invalidRegisterData" finished-at="2025-03-17T12:04:00 IST" duration-ms="98" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test User]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[422]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Invalid Register API tested with email: ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testInvalidUserRegister -->
+        <test-method signature="testInvalidUserRegister(java.lang.String,java.lang.String,java.lang.String,int)[pri:0, instance:api.test.AuthTests.RegisterTests@6d9f7a80]" started-at="2025-03-17T12:04:00 IST" name="testInvalidUserRegister" data-provider="invalidRegisterData" finished-at="2025-03-17T12:04:00 IST" duration-ms="95" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testuser1@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test User]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[409]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Invalid Register API tested with email: testuser1@gmail.com]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testInvalidUserRegister -->
+        <test-method signature="testInvalidUserRegister(java.lang.String,java.lang.String,java.lang.String,int)[pri:0, instance:api.test.AuthTests.RegisterTests@6d9f7a80]" started-at="2025-03-17T12:04:00 IST" name="testInvalidUserRegister" data-provider="invalidRegisterData" finished-at="2025-03-17T12:04:00 IST" duration-ms="132" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testuser1@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[409]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Invalid Register API tested with email: testuser1@gmail.com]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testInvalidUserRegister -->
+        <test-method signature="testInvalidUserRegister(java.lang.String,java.lang.String,java.lang.String,int)[pri:0, instance:api.test.AuthTests.RegisterTests@6d9f7a80]" started-at="2025-03-17T12:04:00 IST" name="testInvalidUserRegister" data-provider="invalidRegisterData" finished-at="2025-03-17T12:04:00 IST" duration-ms="113" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[invalidemail]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test User]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[422]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Invalid Register API tested with email: invalidemail]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testInvalidUserRegister -->
+        <test-method signature="testInvalidUserRegister(java.lang.String,java.lang.String,java.lang.String,int)[pri:0, instance:api.test.AuthTests.RegisterTests@6d9f7a80]" started-at="2025-03-17T12:04:00 IST" name="testInvalidUserRegister" data-provider="invalidRegisterData" finished-at="2025-03-17T12:04:02 IST" duration-ms="1781" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[user@example.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[short]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test User]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[409]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Invalid Register API tested with email: user@example.com]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testInvalidUserRegister -->
+        <test-method signature="testInvalidUserRegister(java.lang.String,java.lang.String,java.lang.String,int)[pri:0, instance:api.test.AuthTests.RegisterTests@6d9f7a80]" started-at="2025-03-17T12:04:02 IST" name="testInvalidUserRegister" data-provider="invalidRegisterData" finished-at="2025-03-17T12:04:02 IST" duration-ms="86" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[websitelearnertest@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test@1234]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Test User]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[409]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Invalid Register API tested with email: websitelearnertest@gmail.com]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testInvalidUserRegister -->
+        <test-method signature="testInvalidUserRegister(java.lang.String,java.lang.String,java.lang.String,int)[pri:0, instance:api.test.AuthTests.RegisterTests@6d9f7a80]" started-at="2025-03-17T12:04:02 IST" name="testInvalidUserRegister" data-provider="invalidRegisterData" finished-at="2025-03-17T12:04:02 IST" duration-ms="81" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[422]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Invalid Register API tested with email: ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testInvalidUserRegister -->
+        <test-method signature="testValidUserRegister(java.lang.String,java.lang.String,java.lang.String,int)[pri:0, instance:api.test.AuthTests.RegisterTests@6d9f7a80]" started-at="2025-03-17T12:04:02 IST" name="testValidUserRegister" data-provider="validRegisterData" finished-at="2025-03-17T12:04:06 IST" duration-ms="3506" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testuser1742193242529@wl.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test@12345]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[User One]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[401]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Valid Register API tested with email: testuser1742193242529@wl.com]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testValidUserRegister -->
+        <test-method signature="testValidUserRegister(java.lang.String,java.lang.String,java.lang.String,int)[pri:0, instance:api.test.AuthTests.RegisterTests@6d9f7a80]" started-at="2025-03-17T12:04:06 IST" name="testValidUserRegister" data-provider="validRegisterData" finished-at="2025-03-17T12:04:08 IST" duration-ms="2935" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[userexample1742193242529@wl.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[SecurePass@4567]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[User Example]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[401]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Valid Register API tested with email: userexample1742193242529@wl.com]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testValidUserRegister -->
+      </class> <!-- api.test.AuthTests.RegisterTests -->
+    </test> <!-- Authentication Tests -->
+    <test started-at="2025-03-17T12:04:11 IST" name="Single Prompt Tests" finished-at="2025-03-17T12:04:16 IST" duration-ms="5755">
+      <class name="api.test.SinglePromptTests.ContentsNewTests">
+        <test-method signature="testStreamAPI(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:api.test.SinglePromptTests.ContentsNewTests@37052337]" started-at="2025-03-17T12:04:11 IST" name="testStreamAPI" data-provider="contentsDataFromExcel" finished-at="2025-03-17T12:04:14 IST" duration-ms="2301" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Valid Prompt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[46]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Healthy recipes]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[13]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[21]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[YES]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStreamAPI -->
+        <test-method signature="testStreamAPI(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:api.test.SinglePromptTests.ContentsNewTests@37052337]" started-at="2025-03-17T12:04:14 IST" name="testStreamAPI" data-provider="contentsDataFromExcel" finished-at="2025-03-17T12:04:14 IST" duration-ms="81" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Invalid Prompt ID]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[999]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[10]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Healthy recipes]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[13]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[21]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[405]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[YES]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStreamAPI -->
+        <test-method signature="testStreamAPI(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:api.test.SinglePromptTests.ContentsNewTests@37052337]" started-at="2025-03-17T12:04:14 IST" name="testStreamAPI" data-provider="contentsDataFromExcel" finished-at="2025-03-17T12:04:14 IST" duration-ms="96" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Invalid Tone ID]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[46]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[999]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Healthy recipes]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[13]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[21]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[500]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[YES]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStreamAPI -->
+        <test-method signature="testStreamAPI(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:api.test.SinglePromptTests.ContentsNewTests@37052337]" started-at="2025-03-17T12:04:14 IST" name="testStreamAPI" data-provider="contentsDataFromExcel" finished-at="2025-03-17T12:04:14 IST" duration-ms="84" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Unregistered Prompt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[999]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[12]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Tech innovations]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[15]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[22]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[405]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[YES]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStreamAPI -->
+        <test-method signature="testStreamAPI(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:api.test.SinglePromptTests.ContentsNewTests@37052337]" started-at="2025-03-17T12:04:14 IST" name="testStreamAPI" data-provider="contentsDataFromExcel" finished-at="2025-03-17T12:04:14 IST" duration-ms="97" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Invalid Language ID]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[50]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[12]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Tech innovations]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[15]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[999]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[500]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[YES]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStreamAPI -->
+        <test-method signature="testStreamAPI(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:api.test.SinglePromptTests.ContentsNewTests@37052337]" started-at="2025-03-17T12:04:14 IST" name="testStreamAPI" data-provider="contentsDataFromExcel" finished-at="2025-03-17T12:04:16 IST" duration-ms="2232" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Valid Prompt with Disabled]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[50]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[12]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Tech innovations]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[15]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[22]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[YES]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStreamAPI -->
+        <test-method signature="testStreamAPI(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:api.test.SinglePromptTests.ContentsNewTests@37052337]" started-at="2025-03-17T12:04:16 IST" name="testStreamAPI" data-provider="contentsDataFromExcel" finished-at="2025-03-17T12:04:16 IST" duration-ms="95" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Empty Prompt]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[12]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[" "]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[15]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[22]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[405]]>
+              </value>
+            </param>
+            <param index="8">
+              <value>
+                <![CDATA[YES]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testStreamAPI -->
+      </class> <!-- api.test.SinglePromptTests.ContentsNewTests -->
+      <class name="api.test.SinglePromptTests.PromptListTests">
+        <test-method signature="testPromptListErrors(java.lang.String,int,int,int)[pri:0, instance:api.test.SinglePromptTests.PromptListTests@340da44c]" started-at="2025-03-17T12:04:11 IST" name="testPromptListErrors" data-provider="errorCases" finished-at="2025-03-17T12:04:11 IST" duration-ms="543" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Valid Request (Success)]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[100]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[ TestCase: Valid Request (Success) | Paginate=100 | Page=1 | Expected: 200 | Got: 200]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testPromptListErrors -->
+      </class> <!-- api.test.SinglePromptTests.PromptListTests -->
+      <class name="api.test.SinglePromptTests.CategoryListTests">
+        <test-method signature="testCategoryListErrors(int,int,int)[pri:0, instance:api.test.SinglePromptTests.CategoryListTests@424ebba3]" started-at="2025-03-17T12:04:11 IST" name="testCategoryListErrors" data-provider="categoryErrorCases" finished-at="2025-03-17T12:04:11 IST" duration-ms="136" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[100]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Tested API with paginate=100, page=1. Expected: 200, Got: 200]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testCategoryListErrors -->
+      </class> <!-- api.test.SinglePromptTests.CategoryListTests -->
+    </test> <!-- Single Prompt Tests -->
+  </suite> <!-- GRAVITY WRITE API AUTOMATION -->
+</testng-results>
