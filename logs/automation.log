@@ -1,85 +1,53 @@
-12:04:00.113 [main] INFO  api.test.AuthTests.LoginTests - Token stored successfully in TokenManager!
-12:04:00.133 [main] INFO  api.test.AuthTests.RegisterTests - Starting testInvalidUserRegister for Email: , Name: Test User
-12:04:00.226 [main] INFO  api.test.AuthTests.RegisterTests - Register API Response Status Code: 422
-12:04:00.231 [main] INFO  api.test.AuthTests.RegisterTests - Starting testInvalidUserRegister for Email: testuser1@gmail.com, Name: Test User
-12:04:00.324 [main] INFO  api.test.AuthTests.RegisterTests - Register API Response Status Code: 409
-12:04:00.328 [main] INFO  api.test.AuthTests.RegisterTests - Starting testInvalidUserRegister for Email: testuser1@gmail.com, Name: 
-12:04:00.458 [main] INFO  api.test.AuthTests.RegisterTests - Register API Response Status Code: 409
-12:04:00.463 [main] INFO  api.test.AuthTests.RegisterTests - Starting testInvalidUserRegister for Email: invalidemail, Name: Test User
-12:04:00.574 [main] INFO  api.test.AuthTests.RegisterTests - Register API Response Status Code: 422
-12:04:00.578 [main] INFO  api.test.AuthTests.RegisterTests - Starting testInvalidUserRegister for Email: user@example.com, Name: Test User
-12:04:02.356 [main] INFO  api.test.AuthTests.RegisterTests - Register API Response Status Code: 409
-12:04:02.359 [main] INFO  api.test.AuthTests.RegisterTests - Starting testInvalidUserRegister for Email: websitelearnertest@gmail.com, Name: Test User
-12:04:02.445 [main] INFO  api.test.AuthTests.RegisterTests - Register API Response Status Code: 409
-12:04:02.446 [main] INFO  api.test.AuthTests.RegisterTests - Starting testInvalidUserRegister for Email: , Name: 
-12:04:02.526 [main] INFO  api.test.AuthTests.RegisterTests - Register API Response Status Code: 422
-12:04:02.530 [main] INFO  api.test.AuthTests.RegisterTests - Starting testValidUserRegister for Email: testuser1742193242529@wl.com, Name: User One
-12:04:06.035 [main] INFO  api.test.AuthTests.RegisterTests - Register API Response Status Code: 401
-12:04:06.038 [main] INFO  api.test.AuthTests.RegisterTests - Starting testValidUserRegister for Email: userexample1742193242529@wl.com, Name: User Example
-12:04:08.971 [main] INFO  api.test.AuthTests.RegisterTests - Register API Response Status Code: 401
-12:04:08.977 [main] INFO  api.test.AuthTests.GetUserTests - Starting test: testGetUserWithValidToken
-12:04:08.977 [main] INFO  api.test.AuthTests.GetUserTests - Retrieved Bearer Token: 3506367|AF05NlHawATDhJXoHQ10Su0lHXQHffE1jcx616Oj346ba824
-12:04:09.082 [main] INFO  api.test.AuthTests.GetUserTests - API request sent for fetching user details
-12:04:09.082 [main] INFO  api.test.AuthTests.GetUserTests - Response Status Code: 200
-12:04:09.115 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Executing Test Case: Valid Forgot Password
-12:04:09.115 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Starting testForgotPassword - Email: [websitelearnertest@gmail.com], Expected Status Code: [200]
-12:04:09.116 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Forgot Password Request Payload: api.payload.AuthPayloads.ForgotPassword@40ddf339
-12:04:10.681 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Response Status Code: 200
-12:04:10.682 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Response Body: {
-    "message": "Password reset email sent.",
-    "code": 200,
-    "response": "OK"
-}
-12:04:10.689 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Forgot password request successful. Message: Password reset email sent.
-12:04:10.690 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Executing Test Case: Unregistered Email
-12:04:10.691 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Starting testForgotPassword - Email: [wrongemail@gmail.com], Expected Status Code: [405]
-12:04:10.691 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Forgot Password Request Payload: api.payload.AuthPayloads.ForgotPassword@d3d5094
-12:04:10.774 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Response Status Code: 405
-12:04:10.775 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Response Body: {
+16:24:29.789 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Forgot password request successful. Message: Password reset email sent.
+16:24:29.795 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Executing Test Case: Unregistered Email
+16:24:29.795 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Starting testForgotPassword - Email: [wrongemail@gmail.com], Expected Status Code: [405]
+16:24:29.795 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Forgot Password Request Payload: api.payload.AuthPayloads.ForgotPassword@57bac3f0
+16:24:29.885 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Response Status Code: 405
+16:24:29.886 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Response Body: {
     "error": "User not found.",
     "message": "User not found.",
     "type": "critical"
 }
-12:04:10.775 [main] ERROR api.test.AuthTests.ForgotPasswordTests - Forgot password request failed.
-12:04:10.777 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Executing Test Case: Invalid Email Format
-12:04:10.777 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Starting testForgotPassword - Email: [invalidemailformat], Expected Status Code: [405]
-12:04:10.777 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Forgot Password Request Payload: api.payload.AuthPayloads.ForgotPassword@33fec21
-12:04:10.870 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Response Status Code: 405
-12:04:10.870 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Response Body: {
+16:24:29.886 [main] ERROR api.test.AuthTests.ForgotPasswordTests - Forgot password request failed.
+16:24:29.887 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Executing Test Case: Invalid Email Format
+16:24:29.887 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Starting testForgotPassword - Email: [invalidemailformat], Expected Status Code: [405]
+16:24:29.887 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Forgot Password Request Payload: api.payload.AuthPayloads.ForgotPassword@2e4b5da1
+16:24:29.967 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Response Status Code: 405
+16:24:29.968 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Response Body: {
     "error": "User not found.",
     "message": "User not found.",
     "type": "critical"
 }
-12:04:10.871 [main] ERROR api.test.AuthTests.ForgotPasswordTests - Forgot password request failed.
-12:04:10.871 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Executing Test Case: Empty Email
-12:04:10.871 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Starting testForgotPassword - Email: [" "], Expected Status Code: [405]
-12:04:10.872 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Forgot Password Request Payload: api.payload.AuthPayloads.ForgotPassword@2c0a3826
-12:04:10.948 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Response Status Code: 405
-12:04:10.949 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Response Body: {
+16:24:29.968 [main] ERROR api.test.AuthTests.ForgotPasswordTests - Forgot password request failed.
+16:24:29.969 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Executing Test Case: Empty Email
+16:24:29.970 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Starting testForgotPassword - Email: [" "], Expected Status Code: [405]
+16:24:29.970 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Forgot Password Request Payload: api.payload.AuthPayloads.ForgotPassword@61bd0845
+16:24:30.052 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Response Status Code: 405
+16:24:30.053 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Response Body: {
     "error": "User not found.",
     "message": "User not found.",
     "type": "critical"
 }
-12:04:10.949 [main] ERROR api.test.AuthTests.ForgotPasswordTests - Forgot password request failed.
-12:04:11.227 [main] INFO  api.test.SinglePromptTests.PromptListTests - =============================================================
-12:04:11.228 [main] INFO  api.test.SinglePromptTests.PromptListTests -  Executing Test Case: Valid Request (Success)
-12:04:11.228 [main] INFO  api.test.SinglePromptTests.PromptListTests -  Testing prompt list with paginate=100 and page=1
-12:04:11.578 [main] INFO  api.test.SinglePromptTests.PromptListTests -  Response Status Code: 200
-12:04:11.767 [main] INFO  api.test.SinglePromptTests.PromptListTests -  Test Case Completed: Valid Request (Success)
+16:24:30.054 [main] ERROR api.test.AuthTests.ForgotPasswordTests - Forgot password request failed.
+16:24:30.309 [main] INFO  api.test.SinglePromptTests.PromptListTests - =============================================================
+16:24:30.309 [main] INFO  api.test.SinglePromptTests.PromptListTests -  Executing Test Case: Valid Request (Success)
+16:24:30.309 [main] INFO  api.test.SinglePromptTests.PromptListTests -  Testing prompt list with paginate=100 and page=1
+16:24:30.559 [main] INFO  api.test.SinglePromptTests.PromptListTests -  Response Status Code: 200
+16:24:30.714 [main] INFO  api.test.SinglePromptTests.PromptListTests -  Test Case Completed: Valid Request (Success)
 
-12:04:11.768 [main] INFO  api.test.SinglePromptTests.PromptListTests - =============================================================
-12:04:11.793 [main] INFO  api.test.SinglePromptTests.CategoryListTests - Executing test with paginate=100 and page=1
-12:04:11.893 [main] INFO  api.test.SinglePromptTests.CategoryListTests - Received Response - Status Code: 200
-12:04:11.966 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Executing Test Case: Valid Prompt
-12:04:11.966 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Request Data - PromptID: [46], ToneID: [10], Question70: [Healthy recipes], Question243: [13], LanguageID: [21], IsChat: [0]
-12:04:12.719 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Response Headers: Server=nginx/1.22.0 (Ubuntu)
+16:24:30.714 [main] INFO  api.test.SinglePromptTests.PromptListTests - =============================================================
+16:24:30.742 [main] INFO  api.test.SinglePromptTests.CategoryListTests - Executing test with paginate=100 and page=1
+16:24:30.848 [main] INFO  api.test.SinglePromptTests.CategoryListTests - Received Response - Status Code: 200
+16:24:30.897 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Executing Test Case: Valid Prompt
+16:24:30.897 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Request Data - PromptID: [46], ToneID: [10], Question70: [Healthy recipes], Question243: [13], LanguageID: [21], IsChat: [0]
+16:24:31.525 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Response Headers: Server=nginx/1.22.0 (Ubuntu)
 Content-Type=text/event-stream; charset=UTF-8
 Transfer-Encoding=chunked
 Connection=keep-alive
 Cache-Control=no-cache, private
 X-Engine-Id=7
-content_id=9316707
-Date=Mon, 17 Mar 2025 06:34:09 GMT
+content_id=9319626
+Date=Mon, 17 Mar 2025 10:54:28 GMT
 Access-Control-Allow-Origin=*
 Access-Control-Allow-Methods=POST, GET, OPTIONS, PUT, DELETE
 Access-Control-Allow-Headers=Content-Type, X-Auth-Token, Origin, Authorization
@@ -89,129 +57,108 @@ Access-Control-Expose-Headers=X-Engine-Id, content_id, Content-Type, Cache-Contr
 X-Frame-Options=SAMEORIGIN
 X-XSS-Protection=1; mode=block
 X-Content-Type-Options=nosniff
-12:04:12.719 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Content-ID: 9316707
-12:04:12.814 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: - "10 Mouthwatering Healthy Recipes to Try This Week"
-12:04:12.967 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: - "The Ultimate Guide to Quick and Easy Healthy Recipes"
-12:04:13.054 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: - "Healthy Recipes That Will Make You Forget You're Eating Healthy"
-12:04:13.166 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: - "5 Ingredient Healthy Recipes for Busy Weeknights"
-12:04:13.282 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: - "Delicious and Nutritious: Healthy Recipes for Every Meal"
-12:04:13.399 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: - "Healthy Recipes That Taste Like a Cheat Meal"
-12:04:13.511 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: - "From Breakfast to Dinner: Healthy Recipes for Every Craving"
-12:04:13.621 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: - "Healthy Recipes That Even Picky Eaters Will Love"
-12:04:13.751 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: - "Get Your Greens: Healthy Recipes Packed with Veggies"
-12:04:13.888 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: - "Indulge Guilt-Free with These Decadent Healthy Recipes"
-12:04:14.018 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: - "Healthy Recipes to Boost Your Immune System and Energy"
-12:04:14.141 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: - "One-Pot Wonders: Easy and Healthy Recipes for Minimal Cleanup"
-12:04:14.265 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: - "Satisfy Your Sweet Tooth with These Healthy Dessert Recipes"
-12:04:14.267 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Executing Test Case: Invalid Prompt ID
-12:04:14.267 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Request Data - PromptID: [999], ToneID: [10], Question70: [Healthy recipes], Question243: [13], LanguageID: [21], IsChat: [0]
-12:04:14.347 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Response Headers: Server=nginx/1.22.0 (Ubuntu)
+16:24:31.525 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Content-ID: 9319626
+16:24:31.628 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: 1. "10 Mouthwatering Healthy Recipes to Try This Week"
+16:24:31.765 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: 2. "The Ultimate Guide to Quick and Easy Healthy Recipes"
+16:24:31.846 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: 3. "Delicious and Nutritious: Healthy Recipes for Every Meal"
+16:24:31.957 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: 4. "Healthy Recipes That Will Make You Forget You're Eating Healthy"
+16:24:32.045 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: 5. "5 Ingredient Healthy Recipes for Busy Weeknights"
+16:24:32.168 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: 6. "From Breakfast to Dinner: Healthy Recipes for Every Craving"
+16:24:32.253 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: 7. "Healthy Recipes That Taste Like a Cheat Meal"
+16:24:32.355 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: 8. "Get Your Greens: Healthy Recipes Packed with Veggies"
+16:24:32.454 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: 9. "Healthy Recipes That Even Picky Eaters Will Love"
+16:24:32.586 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: 10. "Indulge Guilt-Free with These Healthy Dessert Recipes"
+16:24:32.698 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: 11. "One-Pot Wonders: Healthy Recipes for Easy Cleanup"
+16:24:32.806 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: 12. "Spice Up Your Life with These Flavorful Healthy Recipes"
+16:24:32.915 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: 13. "Healthy Recipes to Kickstart Your Clean Eating Journey"
+16:24:32.917 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Executing Test Case: Invalid Prompt ID
+16:24:32.917 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Request Data - PromptID: [999], ToneID: [10], Question70: [Healthy recipes], Question243: [13], LanguageID: [21], IsChat: [0]
+16:24:33.005 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Response Headers: Server=nginx/1.22.0 (Ubuntu)
 Content-Type=application/json
 Transfer-Encoding=chunked
 Connection=keep-alive
 Cache-Control=no-cache, private
-Date=Mon, 17 Mar 2025 06:34:11 GMT
+Date=Mon, 17 Mar 2025 10:54:30 GMT
 Access-Control-Allow-Origin=*
 Access-Control-Allow-Methods=POST, GET, OPTIONS, PUT, DELETE
 Access-Control-Allow-Headers=Content-Type, X-Auth-Token, Origin, Authorization
 X-RateLimit-Limit=120
 X-RateLimit-Remaining=102
 Access-Control-Expose-Headers=X-Engine-Id, content_id, Content-Type, Cache-Control
-12:04:14.347 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Content-ID: null
-12:04:14.347 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: {"error":"Please Enter a valid Prompt Id","message":"Please Enter a valid Prompt Id","type":"info"}
-12:04:14.348 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Executing Test Case: Invalid Tone ID
-12:04:14.348 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Request Data - PromptID: [46], ToneID: [999], Question70: [Healthy recipes], Question243: [13], LanguageID: [21], IsChat: [0]
-12:04:14.443 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Response Headers: Server=nginx/1.22.0 (Ubuntu)
+16:24:33.005 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Content-ID: null
+16:24:33.006 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: {"error":"Please Enter a valid Prompt Id","message":"Please Enter a valid Prompt Id","type":"info"}
+16:24:33.007 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Executing Test Case: Invalid Tone ID
+16:24:33.007 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Request Data - PromptID: [46], ToneID: [999], Question70: [Healthy recipes], Question243: [13], LanguageID: [21], IsChat: [0]
+16:24:33.130 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Response Headers: Server=nginx/1.22.0 (Ubuntu)
 Content-Type=application/json
 Transfer-Encoding=chunked
 Connection=keep-alive
 Cache-Control=no-cache, private
-Date=Mon, 17 Mar 2025 06:34:11 GMT
+Date=Mon, 17 Mar 2025 10:54:30 GMT
 Access-Control-Allow-Origin=*
 Access-Control-Allow-Methods=POST, GET, OPTIONS, PUT, DELETE
 Access-Control-Allow-Headers=Content-Type, X-Auth-Token, Origin, Authorization
 X-RateLimit-Limit=120
 X-RateLimit-Remaining=101
 Access-Control-Expose-Headers=X-Engine-Id, content_id, Content-Type, Cache-Control
-12:04:14.444 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Content-ID: null
-12:04:14.444 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: {"status":false,"data":null,"message":"SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`genie_db`.`contents`, CONSTRAINT `tone_fk_7934190` FOREIGN KEY (`tone_id`) REFERENCES `tones` (`id`)) (Connection: mysql, SQL: insert into `contents` (`user_id`, `prompt_id`, `tone_id`, `engine_id`, `language_id`, `is_mode`, `updated_at`, `created_at`) values (980150, 46, 999, 15, 21, 0, 2025-03-17 12:04:11, 2025-03-17 12:04:11))","type":"error","code":500,"response":"error"}
-12:04:14.445 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Executing Test Case: Unregistered Prompt
-12:04:14.445 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Request Data - PromptID: [999], ToneID: [12], Question70: [Tech innovations], Question243: [15], LanguageID: [22], IsChat: [0]
-12:04:14.528 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Response Headers: Server=nginx/1.22.0 (Ubuntu)
+16:24:33.130 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Content-ID: null
+16:24:33.131 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: {"status":false,"data":null,"message":"SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`genie_db`.`contents`, CONSTRAINT `tone_fk_7934190` FOREIGN KEY (`tone_id`) REFERENCES `tones` (`id`)) (Connection: mysql, SQL: insert into `contents` (`user_id`, `prompt_id`, `tone_id`, `engine_id`, `language_id`, `is_mode`, `updated_at`, `created_at`) values (980150, 46, 999, 15, 21, 0, 2025-03-17 16:24:30, 2025-03-17 16:24:30))","type":"error","code":500,"response":"error"}
+16:24:33.131 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Executing Test Case: Unregistered Prompt
+16:24:33.131 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Request Data - PromptID: [999], ToneID: [12], Question70: [Tech innovations], Question243: [15], LanguageID: [22], IsChat: [0]
+16:24:33.247 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Response Headers: Server=nginx/1.22.0 (Ubuntu)
 Content-Type=application/json
 Transfer-Encoding=chunked
 Connection=keep-alive
 Cache-Control=no-cache, private
-Date=Mon, 17 Mar 2025 06:34:11 GMT
+Date=Mon, 17 Mar 2025 10:54:30 GMT
 Access-Control-Allow-Origin=*
 Access-Control-Allow-Methods=POST, GET, OPTIONS, PUT, DELETE
 Access-Control-Allow-Headers=Content-Type, X-Auth-Token, Origin, Authorization
 X-RateLimit-Limit=120
 X-RateLimit-Remaining=100
 Access-Control-Expose-Headers=X-Engine-Id, content_id, Content-Type, Cache-Control
-12:04:14.528 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Content-ID: null
-12:04:14.529 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: {"error":"Please Enter a valid Prompt Id","message":"Please Enter a valid Prompt Id","type":"info"}
-12:04:14.530 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Executing Test Case: Invalid Language ID
-12:04:14.531 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Request Data - PromptID: [50], ToneID: [12], Question70: [Tech innovations], Question243: [15], LanguageID: [999], IsChat: [0]
-12:04:14.625 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Response Headers: Server=nginx/1.22.0 (Ubuntu)
+16:24:33.247 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Content-ID: null
+16:24:33.247 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: {"error":"Please Enter a valid Prompt Id","message":"Please Enter a valid Prompt Id","type":"info"}
+16:24:33.249 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Executing Test Case: Invalid Language ID
+16:24:33.249 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Request Data - PromptID: [50], ToneID: [12], Question70: [Tech innovations], Question243: [15], LanguageID: [999], IsChat: [0]
+16:24:33.336 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Response Headers: Server=nginx/1.22.0 (Ubuntu)
 Content-Type=application/json
 Transfer-Encoding=chunked
 Connection=keep-alive
 Cache-Control=no-cache, private
-Date=Mon, 17 Mar 2025 06:34:11 GMT
+Date=Mon, 17 Mar 2025 10:54:30 GMT
 Access-Control-Allow-Origin=*
 Access-Control-Allow-Methods=POST, GET, OPTIONS, PUT, DELETE
 Access-Control-Allow-Headers=Content-Type, X-Auth-Token, Origin, Authorization
 X-RateLimit-Limit=120
 X-RateLimit-Remaining=99
 Access-Control-Expose-Headers=X-Engine-Id, content_id, Content-Type, Cache-Control
-12:04:14.626 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Content-ID: null
-12:04:14.626 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: {"status":false,"data":null,"message":"SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`genie_db`.`contents`, CONSTRAINT `language_fk_8089055` FOREIGN KEY (`language_id`) REFERENCES `languages` (`id`)) (Connection: mysql, SQL: insert into `contents` (`user_id`, `prompt_id`, `tone_id`, `engine_id`, `language_id`, `is_mode`, `updated_at`, `created_at`) values (980150, 50, 12, 19, 999, 0, 2025-03-17 12:04:11, 2025-03-17 12:04:11))","type":"error","code":500,"response":"error"}
-12:04:14.628 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Executing Test Case: Valid Prompt with Disabled
-12:04:14.628 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Request Data - PromptID: [50], ToneID: [12], Question70: [Tech innovations], Question243: [15], LanguageID: [22], IsChat: [0]
-12:04:16.212 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Response Headers: Server=nginx/1.22.0 (Ubuntu)
-Content-Type=text/event-stream; charset=UTF-8
+16:24:33.337 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Content-ID: null
+16:24:33.337 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: {"status":false,"data":null,"message":"SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`genie_db`.`contents`, CONSTRAINT `language_fk_8089055` FOREIGN KEY (`language_id`) REFERENCES `languages` (`id`)) (Connection: mysql, SQL: insert into `contents` (`user_id`, `prompt_id`, `tone_id`, `engine_id`, `language_id`, `is_mode`, `updated_at`, `created_at`) values (980150, 50, 12, 19, 999, 0, 2025-03-17 16:24:30, 2025-03-17 16:24:30))","type":"error","code":500,"response":"error"}
+16:24:33.338 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Executing Test Case: Empty Prompt
+16:24:33.338 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Request Data - PromptID: [0], ToneID: [12], Question70: [" "], Question243: [15], LanguageID: [22], IsChat: [0]
+16:24:33.437 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Response Headers: Server=nginx/1.22.0 (Ubuntu)
+Content-Type=application/json
 Transfer-Encoding=chunked
 Connection=keep-alive
 Cache-Control=no-cache, private
-X-Engine-Id=19
-content_id=9316712
-Date=Mon, 17 Mar 2025 06:34:12 GMT
+Date=Mon, 17 Mar 2025 10:54:30 GMT
 Access-Control-Allow-Origin=*
 Access-Control-Allow-Methods=POST, GET, OPTIONS, PUT, DELETE
 Access-Control-Allow-Headers=Content-Type, X-Auth-Token, Origin, Authorization
 X-RateLimit-Limit=120
 X-RateLimit-Remaining=98
 Access-Control-Expose-Headers=X-Engine-Id, content_id, Content-Type, Cache-Control
-X-Frame-Options=SAMEORIGIN
-X-XSS-Protection=1; mode=block
-X-Content-Type-Options=nosniff
-12:04:16.213 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Content-ID: 9316712
-12:04:16.859 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: I understand. I'll generate image prompts based on the blog outline you provide, following the guidelines you've specified. Please share the blog outline, and I'll create the prompts accordingly.
-12:04:16.861 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Executing Test Case: Empty Prompt
-12:04:16.861 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Request Data - PromptID: [0], ToneID: [12], Question70: [" "], Question243: [15], LanguageID: [22], IsChat: [0]
-12:04:16.955 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Response Headers: Server=nginx/1.22.0 (Ubuntu)
-Content-Type=application/json
-Transfer-Encoding=chunked
-Connection=keep-alive
-Cache-Control=no-cache, private
-Date=Mon, 17 Mar 2025 06:34:14 GMT
-Access-Control-Allow-Origin=*
-Access-Control-Allow-Methods=POST, GET, OPTIONS, PUT, DELETE
-Access-Control-Allow-Headers=Content-Type, X-Auth-Token, Origin, Authorization
-X-RateLimit-Limit=120
-X-RateLimit-Remaining=97
-Access-Control-Expose-Headers=X-Engine-Id, content_id, Content-Type, Cache-Control
-12:04:16.955 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Content-ID: null
-12:04:16.955 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: {"error":"Please Enter a valid Prompt Id","message":"Please Enter a valid Prompt Id","type":"info"}
-14:00:04.763 [main] INFO  api.test.AuthTests.LoginTests - Executing Test Case: Valid Login
-14:00:04.765 [main] INFO  api.test.AuthTests.LoginTests - Starting testUserLogin - Email: [websitelearnertest@gmail.com], Expected Status Code: [200]
-14:00:04.774 [main] INFO  api.test.AuthTests.LoginTests - Login Request Payload: Login{email='websitelearnertest@gmail.com', password='Website@123'}
-14:00:09.701 [main] INFO  api.test.AuthTests.LoginTests - Response Status Code: 200
-14:00:09.736 [main] INFO  api.test.AuthTests.LoginTests - Response Body: {
+16:24:33.437 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Content-ID: null
+16:24:33.437 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: {"error":"Please Enter a valid Prompt Id","message":"Please Enter a valid Prompt Id","type":"info"}
+17:12:03.422 [main] INFO  api.test.AuthTests.LoginTests - Executing Test Case: Valid Login
+17:12:03.425 [main] INFO  api.test.AuthTests.LoginTests - Starting testUserLogin - Email: [websitelearnertest@gmail.com], Expected Status Code: [200]
+17:12:03.434 [main] INFO  api.test.AuthTests.LoginTests - Login Request Payload: Login{email='websitelearnertest@gmail.com', password='Website@123'}
+17:12:08.001 [main] INFO  api.test.AuthTests.LoginTests - Response Status Code: 200
+17:12:08.036 [main] INFO  api.test.AuthTests.LoginTests - Response Body: {
     "success": true,
     "data": {
-        "access_token": "3507557|JUsVQuO9G7Qy3zhp5D3WNd159NaLKRmjgVhHE8V026919aeb",
+        "access_token": "3509530|MAlJUElrUr1K6DAyD9azvQebRSvqGcvJLlGvvzxh7b8da303",
         "gravator": "https://www.gravatar.com/avatar/5674124e09ed89d1c982931876849777?s=80&d=identicon&r=g",
         "type": "bearer",
         "user": {
@@ -224,7 +171,7 @@ Access-Control-Expose-Headers=X-Engine-Id, content_id, Content-Type, Cache-Contr
             "last_ip_address": "124.123.69.155",
             "last_location": "India",
             "created_at": "2024-06-24 07:14:55",
-            "updated_at": "2025-03-17 12:04:06",
+            "updated_at": "2025-03-17 17:05:55",
             "deleted_at": null,
             "deleted_reason": null,
             "language_id": 21,
@@ -322,209 +269,188 @@ Access-Control-Expose-Headers=X-Engine-Id, content_id, Content-Type, Cache-Contr
     },
     "message": "User Loggedin successfully."
 }
-14:00:10.174 [main] INFO  api.test.AuthTests.LoginTests - Token stored successfully in TokenManager!
-14:00:10.189 [main] INFO  api.test.AuthTests.RegisterTests - Starting testInvalidUserRegister for Email: , Name: Test User
-14:00:10.284 [main] INFO  api.test.AuthTests.RegisterTests - Register API Response Status Code: 422
-14:00:10.294 [main] INFO  api.test.AuthTests.RegisterTests - Starting testInvalidUserRegister for Email: testuser1@gmail.com, Name: Test User
-14:00:10.389 [main] INFO  api.test.AuthTests.RegisterTests - Register API Response Status Code: 409
-14:00:10.392 [main] INFO  api.test.AuthTests.RegisterTests - Starting testInvalidUserRegister for Email: testuser1@gmail.com, Name: 
-14:00:10.511 [main] INFO  api.test.AuthTests.RegisterTests - Register API Response Status Code: 409
-14:00:10.514 [main] INFO  api.test.AuthTests.RegisterTests - Starting testInvalidUserRegister for Email: invalidemail, Name: Test User
-14:00:10.625 [main] INFO  api.test.AuthTests.RegisterTests - Register API Response Status Code: 422
-14:00:10.628 [main] INFO  api.test.AuthTests.RegisterTests - Starting testInvalidUserRegister for Email: user@example.com, Name: Test User
-14:00:12.399 [main] INFO  api.test.AuthTests.RegisterTests - Register API Response Status Code: 409
-14:00:12.400 [main] INFO  api.test.AuthTests.RegisterTests - Starting testInvalidUserRegister for Email: websitelearnertest@gmail.com, Name: Test User
-14:00:12.480 [main] INFO  api.test.AuthTests.RegisterTests - Register API Response Status Code: 409
-14:00:12.482 [main] INFO  api.test.AuthTests.RegisterTests - Starting testInvalidUserRegister for Email: , Name: 
-14:00:12.581 [main] INFO  api.test.AuthTests.RegisterTests - Register API Response Status Code: 422
-14:00:12.586 [main] INFO  api.test.AuthTests.RegisterTests - Starting testValidUserRegister for Email: testuser1742200212584@wl.com, Name: User One
-14:00:16.794 [main] INFO  api.test.AuthTests.RegisterTests - Register API Response Status Code: 401
-14:00:16.796 [main] INFO  api.test.AuthTests.RegisterTests - Starting testValidUserRegister for Email: userexample1742200212584@wl.com, Name: User Example
-14:00:19.966 [main] INFO  api.test.AuthTests.RegisterTests - Register API Response Status Code: 401
-14:00:19.970 [main] INFO  api.test.AuthTests.GetUserTests - Starting test: testGetUserWithValidToken
-14:00:19.970 [main] INFO  api.test.AuthTests.GetUserTests - Retrieved Bearer Token: 3507557|JUsVQuO9G7Qy3zhp5D3WNd159NaLKRmjgVhHE8V026919aeb
-14:00:20.106 [main] INFO  api.test.AuthTests.GetUserTests - API request sent for fetching user details
-14:00:20.106 [main] INFO  api.test.AuthTests.GetUserTests - Response Status Code: 200
-14:00:20.152 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Executing Test Case: Valid Forgot Password
-14:00:20.152 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Starting testForgotPassword - Email: [websitelearnertest@gmail.com], Expected Status Code: [200]
-14:00:20.161 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Forgot Password Request Payload: api.payload.AuthPayloads.ForgotPassword@72168258
-14:00:22.155 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Response Status Code: 200
-14:00:22.155 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Response Body: {
+17:12:08.482 [main] INFO  api.test.AuthTests.LoginTests - Token stored successfully in TokenManager!
+17:12:08.496 [main] INFO  api.test.AuthTests.RegisterTests - Starting testInvalidUserRegister for Email: , Name: Test User
+17:12:08.603 [main] INFO  api.test.AuthTests.RegisterTests - Register API Response Status Code: 422
+17:12:08.611 [main] INFO  api.test.AuthTests.RegisterTests - Starting testInvalidUserRegister for Email: testuser1@gmail.com, Name: Test User
+17:12:08.710 [main] INFO  api.test.AuthTests.RegisterTests - Register API Response Status Code: 409
+17:12:08.713 [main] INFO  api.test.AuthTests.RegisterTests - Starting testInvalidUserRegister for Email: testuser1@gmail.com, Name: 
+17:12:08.811 [main] INFO  api.test.AuthTests.RegisterTests - Register API Response Status Code: 409
+17:12:08.813 [main] INFO  api.test.AuthTests.RegisterTests - Starting testInvalidUserRegister for Email: invalidemail, Name: Test User
+17:12:08.892 [main] INFO  api.test.AuthTests.RegisterTests - Register API Response Status Code: 422
+17:12:08.894 [main] INFO  api.test.AuthTests.RegisterTests - Starting testInvalidUserRegister for Email: user@example.com, Name: Test User
+17:12:10.648 [main] INFO  api.test.AuthTests.RegisterTests - Register API Response Status Code: 409
+17:12:10.651 [main] INFO  api.test.AuthTests.RegisterTests - Starting testInvalidUserRegister for Email: websitelearnertest@gmail.com, Name: Test User
+17:12:10.736 [main] INFO  api.test.AuthTests.RegisterTests - Register API Response Status Code: 409
+17:12:10.739 [main] INFO  api.test.AuthTests.RegisterTests - Starting testInvalidUserRegister for Email: , Name: 
+17:12:10.844 [main] INFO  api.test.AuthTests.RegisterTests - Register API Response Status Code: 422
+17:12:10.848 [main] INFO  api.test.AuthTests.RegisterTests - Starting testValidUserRegister for Email: testuser1742211730846@wl.com, Name: User One
+17:12:13.688 [main] INFO  api.test.AuthTests.RegisterTests - Register API Response Status Code: 401
+17:12:13.691 [main] INFO  api.test.AuthTests.RegisterTests - Starting testValidUserRegister for Email: userexample1742211730846@wl.com, Name: User Example
+17:12:17.171 [main] INFO  api.test.AuthTests.RegisterTests - Register API Response Status Code: 401
+17:12:17.175 [main] INFO  api.test.AuthTests.GetUserTests - Starting test: testGetUserWithValidToken
+17:12:17.175 [main] INFO  api.test.AuthTests.GetUserTests - Retrieved Bearer Token: 3509530|MAlJUElrUr1K6DAyD9azvQebRSvqGcvJLlGvvzxh7b8da303
+17:12:17.279 [main] INFO  api.test.AuthTests.GetUserTests - API request sent for fetching user details
+17:12:17.279 [main] INFO  api.test.AuthTests.GetUserTests - Response Status Code: 200
+17:12:17.321 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Executing Test Case: Valid Forgot Password
+17:12:17.321 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Starting testForgotPassword - Email: [websitelearnertest@gmail.com], Expected Status Code: [200]
+17:12:17.327 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Forgot Password Request Payload: api.payload.AuthPayloads.ForgotPassword@7165bde6
+17:12:18.449 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Response Status Code: 200
+17:12:18.450 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Response Body: {
     "message": "Password reset email sent.",
     "code": 200,
     "response": "OK"
 }
-14:00:22.165 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Forgot password request successful. Message: Password reset email sent.
-14:00:22.167 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Executing Test Case: Unregistered Email
-14:00:22.167 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Starting testForgotPassword - Email: [wrongemail@gmail.com], Expected Status Code: [405]
-14:00:22.167 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Forgot Password Request Payload: api.payload.AuthPayloads.ForgotPassword@4a2653a0
-14:00:22.258 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Response Status Code: 405
-14:00:22.259 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Response Body: {
+17:12:18.459 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Forgot password request successful. Message: Password reset email sent.
+17:12:18.460 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Executing Test Case: Unregistered Email
+17:12:18.460 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Starting testForgotPassword - Email: [wrongemail@gmail.com], Expected Status Code: [405]
+17:12:18.460 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Forgot Password Request Payload: api.payload.AuthPayloads.ForgotPassword@2fca282c
+17:12:18.542 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Response Status Code: 405
+17:12:18.543 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Response Body: {
     "error": "User not found.",
     "message": "User not found.",
     "type": "critical"
 }
-14:00:22.259 [main] ERROR api.test.AuthTests.ForgotPasswordTests - Forgot password request failed.
-14:00:22.261 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Executing Test Case: Invalid Email Format
-14:00:22.261 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Starting testForgotPassword - Email: [invalidemailformat], Expected Status Code: [405]
-14:00:22.262 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Forgot Password Request Payload: api.payload.AuthPayloads.ForgotPassword@5383bf08
-14:00:22.365 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Response Status Code: 405
-14:00:22.366 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Response Body: {
+17:12:18.543 [main] ERROR api.test.AuthTests.ForgotPasswordTests - Forgot password request failed.
+17:12:18.545 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Executing Test Case: Invalid Email Format
+17:12:18.545 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Starting testForgotPassword - Email: [invalidemailformat], Expected Status Code: [405]
+17:12:18.545 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Forgot Password Request Payload: api.payload.AuthPayloads.ForgotPassword@408f70ab
+17:12:18.622 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Response Status Code: 405
+17:12:18.623 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Response Body: {
     "error": "User not found.",
     "message": "User not found.",
     "type": "critical"
 }
-14:00:22.366 [main] ERROR api.test.AuthTests.ForgotPasswordTests - Forgot password request failed.
-14:00:22.368 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Executing Test Case: Empty Email
-14:00:22.368 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Starting testForgotPassword - Email: [" "], Expected Status Code: [405]
-14:00:22.368 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Forgot Password Request Payload: api.payload.AuthPayloads.ForgotPassword@60ee7a51
-14:00:22.449 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Response Status Code: 405
-14:00:22.450 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Response Body: {
+17:12:18.623 [main] ERROR api.test.AuthTests.ForgotPasswordTests - Forgot password request failed.
+17:12:18.624 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Executing Test Case: Empty Email
+17:12:18.624 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Starting testForgotPassword - Email: [" "], Expected Status Code: [405]
+17:12:18.624 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Forgot Password Request Payload: api.payload.AuthPayloads.ForgotPassword@2447940d
+17:12:18.702 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Response Status Code: 405
+17:12:18.703 [main] INFO  api.test.AuthTests.ForgotPasswordTests - Response Body: {
     "error": "User not found.",
     "message": "User not found.",
     "type": "critical"
 }
-14:00:22.450 [main] ERROR api.test.AuthTests.ForgotPasswordTests - Forgot password request failed.
-14:00:22.774 [main] INFO  api.test.SinglePromptTests.PromptListTests - =============================================================
-14:00:22.774 [main] INFO  api.test.SinglePromptTests.PromptListTests -  Executing Test Case: Valid Request (Success)
-14:00:22.774 [main] INFO  api.test.SinglePromptTests.PromptListTests -  Testing prompt list with paginate=100 and page=1
-14:00:23.025 [main] INFO  api.test.SinglePromptTests.PromptListTests -  Response Status Code: 200
-14:00:23.226 [main] INFO  api.test.SinglePromptTests.PromptListTests -  Test Case Completed: Valid Request (Success)
+17:12:18.703 [main] ERROR api.test.AuthTests.ForgotPasswordTests - Forgot password request failed.
+17:12:18.972 [main] INFO  api.test.SinglePromptTests.PromptListTests - =============================================================
+17:12:18.972 [main] INFO  api.test.SinglePromptTests.PromptListTests -  Executing Test Case: Valid Request (Success)
+17:12:18.972 [main] INFO  api.test.SinglePromptTests.PromptListTests -  Testing prompt list with paginate=100 and page=1
+17:12:19.242 [main] INFO  api.test.SinglePromptTests.PromptListTests -  Response Status Code: 200
+17:12:19.413 [main] INFO  api.test.SinglePromptTests.PromptListTests -  Test Case Completed: Valid Request (Success)
 
-14:00:23.226 [main] INFO  api.test.SinglePromptTests.PromptListTests - =============================================================
-14:00:23.257 [main] INFO  api.test.SinglePromptTests.CategoryListTests - Executing test with paginate=100 and page=1
-14:00:23.355 [main] INFO  api.test.SinglePromptTests.CategoryListTests - Received Response - Status Code: 200
-14:00:23.432 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Executing Test Case: Valid Prompt
-14:00:23.433 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Request Data - PromptID: [46], ToneID: [10], Question70: [Healthy recipes], Question243: [13], LanguageID: [21], IsChat: [0]
-14:00:24.116 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Response Headers: Server=nginx/1.22.0 (Ubuntu)
+17:12:19.413 [main] INFO  api.test.SinglePromptTests.PromptListTests - =============================================================
+17:12:19.458 [main] INFO  api.test.SinglePromptTests.CategoryListTests - Executing test with paginate=100 and page=1
+17:12:19.553 [main] INFO  api.test.SinglePromptTests.CategoryListTests - Received Response - Status Code: 200
+17:12:19.619 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Executing Test Case: Valid Prompt
+17:12:19.619 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Request Data - PromptID: [46], ToneID: [10], Question70: [Healthy recipes], Question243: [13], LanguageID: [21], IsChat: [0]
+17:12:20.263 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Response Headers: Server=nginx/1.22.0 (Ubuntu)
 Content-Type=text/event-stream; charset=UTF-8
 Transfer-Encoding=chunked
 Connection=keep-alive
 Cache-Control=no-cache, private
 X-Engine-Id=7
-content_id=9318079
-Date=Mon, 17 Mar 2025 08:30:20 GMT
+content_id=9320189
+Date=Mon, 17 Mar 2025 11:42:17 GMT
+Access-Control-Allow-Origin=*
+Access-Control-Allow-Methods=POST, GET, OPTIONS, PUT, DELETE
+Access-Control-Allow-Headers=Content-Type, X-Auth-Token, Origin, Authorization
+X-RateLimit-Limit=120
+X-RateLimit-Remaining=104
+Access-Control-Expose-Headers=X-Engine-Id, content_id, Content-Type, Cache-Control
+X-Frame-Options=SAMEORIGIN
+X-XSS-Protection=1; mode=block
+X-Content-Type-Options=nosniff
+17:12:20.264 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Content-ID: 9320189
+17:12:20.363 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: 1. "10 Mouthwatering Healthy Recipes to Try This Week"
+17:12:20.486 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: 2. "The Ultimate Guide to Quick and Easy Healthy Recipes"
+17:12:20.623 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: 3. "Delicious and Nutritious: Healthy Recipes for Every Meal"
+17:12:20.729 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: 4. "Healthy Recipes That Will Make You Forget About Takeout"
+17:12:20.831 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: 5. "5 Ingredient Healthy Recipes for Busy Weeknights"
+17:12:20.969 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: 6. "From Breakfast to Dinner: Healthy Recipes for Every Craving"
+17:12:21.141 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: 7. "Healthy Recipes That Taste Like a Cheat Meal"
+17:12:21.196 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: 8. "Get Your Greens: Healthy Recipes Packed with Veggies"
+17:12:21.325 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: 9. "Healthy Recipes That Even Picky Eaters Will Love"
+17:12:21.443 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: 10. "One-Pot Wonders: Healthy Recipes for Easy Cleanup"
+17:12:21.598 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: 11. "Indulge Guilt-Free with These Healthy Dessert Recipes"
+17:12:21.777 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: 12. "Spice Up Your Life with These Flavorful Healthy Recipes"
+17:12:21.896 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: 13. "Healthy Recipes to Boost Your Immune System and Energy Levels"
+17:12:21.898 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Executing Test Case: Invalid Prompt ID
+17:12:21.898 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Request Data - PromptID: [999], ToneID: [10], Question70: [Healthy recipes], Question243: [13], LanguageID: [21], IsChat: [0]
+17:12:21.976 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Response Headers: Server=nginx/1.22.0 (Ubuntu)
+Content-Type=application/json
+Transfer-Encoding=chunked
+Connection=keep-alive
+Cache-Control=no-cache, private
+Date=Mon, 17 Mar 2025 11:42:19 GMT
 Access-Control-Allow-Origin=*
 Access-Control-Allow-Methods=POST, GET, OPTIONS, PUT, DELETE
 Access-Control-Allow-Headers=Content-Type, X-Auth-Token, Origin, Authorization
 X-RateLimit-Limit=120
 X-RateLimit-Remaining=103
 Access-Control-Expose-Headers=X-Engine-Id, content_id, Content-Type, Cache-Control
-X-Frame-Options=SAMEORIGIN
-X-XSS-Protection=1; mode=block
-X-Content-Type-Options=nosniff
-14:00:24.117 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Content-ID: 9318079
-14:00:24.164 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: 1. "10 Mouthwatering Healthy Recipes to Try This Week"
-14:00:24.355 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: 2. "The Ultimate Guide to Quick and Easy Healthy Recipes"
-14:00:24.400 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: 3. "Delicious and Nutritious: Healthy Recipes for Every Meal"
-14:00:24.496 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: 4. "Healthy Recipes That Will Make You Forget You're Eating Healthy"
-14:00:24.599 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: 5. "5 Ingredient Healthy Recipes for Busy Weeknights"
-14:00:24.742 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: 6. "From Breakfast to Dinner: Healthy Recipes for Every Craving"
-14:00:24.832 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: 7. "Healthy Recipes That Taste Like a Cheat Meal"
-14:00:24.939 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: 8. "Get Your Greens: Healthy Recipes Packed with Veggies"
-14:00:25.172 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: 9. "Healthy Recipes That Even Picky Eaters Will Love"
-14:00:25.445 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: 10. "Indulge Guilt-Free with These Healthy Dessert Recipes"
-14:00:25.587 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: 11. "One-Pot Wonders: Healthy Recipes for Easy Cleanup"
-14:00:25.674 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: 12. "Spice Up Your Life with These Flavorful Healthy Recipes"
-14:00:25.716 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: 13. "Healthy Recipes to Kickstart Your Clean Eating Journey"
-14:00:25.719 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Executing Test Case: Invalid Prompt ID
-14:00:25.720 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Request Data - PromptID: [999], ToneID: [10], Question70: [Healthy recipes], Question243: [13], LanguageID: [21], IsChat: [0]
-14:00:25.808 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Response Headers: Server=nginx/1.22.0 (Ubuntu)
+17:12:21.977 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Content-ID: null
+17:12:21.977 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: {"error":"Please Enter a valid Prompt Id","message":"Please Enter a valid Prompt Id","type":"info"}
+17:12:21.979 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Executing Test Case: Invalid Tone ID
+17:12:21.979 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Request Data - PromptID: [46], ToneID: [999], Question70: [Healthy recipes], Question243: [13], LanguageID: [21], IsChat: [0]
+17:12:22.065 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Response Headers: Server=nginx/1.22.0 (Ubuntu)
 Content-Type=application/json
 Transfer-Encoding=chunked
 Connection=keep-alive
 Cache-Control=no-cache, private
-Date=Mon, 17 Mar 2025 08:30:23 GMT
+Date=Mon, 17 Mar 2025 11:42:19 GMT
 Access-Control-Allow-Origin=*
 Access-Control-Allow-Methods=POST, GET, OPTIONS, PUT, DELETE
 Access-Control-Allow-Headers=Content-Type, X-Auth-Token, Origin, Authorization
 X-RateLimit-Limit=120
 X-RateLimit-Remaining=102
 Access-Control-Expose-Headers=X-Engine-Id, content_id, Content-Type, Cache-Control
-14:00:25.808 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Content-ID: null
-14:00:25.809 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: {"error":"Please Enter a valid Prompt Id","message":"Please Enter a valid Prompt Id","type":"info"}
-14:00:25.811 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Executing Test Case: Invalid Tone ID
-14:00:25.811 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Request Data - PromptID: [46], ToneID: [999], Question70: [Healthy recipes], Question243: [13], LanguageID: [21], IsChat: [0]
-14:00:25.903 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Response Headers: Server=nginx/1.22.0 (Ubuntu)
+17:12:22.065 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Content-ID: null
+17:12:22.066 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: {"status":false,"data":null,"message":"SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`genie_db`.`contents`, CONSTRAINT `tone_fk_7934190` FOREIGN KEY (`tone_id`) REFERENCES `tones` (`id`)) (Connection: mysql, SQL: insert into `contents` (`user_id`, `prompt_id`, `tone_id`, `engine_id`, `language_id`, `is_mode`, `updated_at`, `created_at`) values (980150, 46, 999, 15, 21, 0, 2025-03-17 17:12:19, 2025-03-17 17:12:19))","type":"error","code":500,"response":"error"}
+17:12:22.068 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Executing Test Case: Unregistered Prompt
+17:12:22.068 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Request Data - PromptID: [999], ToneID: [12], Question70: [Tech innovations], Question243: [15], LanguageID: [22], IsChat: [0]
+17:12:22.148 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Response Headers: Server=nginx/1.22.0 (Ubuntu)
 Content-Type=application/json
 Transfer-Encoding=chunked
 Connection=keep-alive
 Cache-Control=no-cache, private
-Date=Mon, 17 Mar 2025 08:30:23 GMT
+Date=Mon, 17 Mar 2025 11:42:19 GMT
 Access-Control-Allow-Origin=*
 Access-Control-Allow-Methods=POST, GET, OPTIONS, PUT, DELETE
 Access-Control-Allow-Headers=Content-Type, X-Auth-Token, Origin, Authorization
 X-RateLimit-Limit=120
 X-RateLimit-Remaining=101
 Access-Control-Expose-Headers=X-Engine-Id, content_id, Content-Type, Cache-Control
-14:00:25.904 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Content-ID: null
-14:00:25.904 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: {"status":false,"data":null,"message":"SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`genie_db`.`contents`, CONSTRAINT `tone_fk_7934190` FOREIGN KEY (`tone_id`) REFERENCES `tones` (`id`)) (Connection: mysql, SQL: insert into `contents` (`user_id`, `prompt_id`, `tone_id`, `engine_id`, `language_id`, `is_mode`, `updated_at`, `created_at`) values (980150, 46, 999, 15, 21, 0, 2025-03-17 14:00:23, 2025-03-17 14:00:23))","type":"error","code":500,"response":"error"}
-14:00:25.906 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Executing Test Case: Unregistered Prompt
-14:00:25.906 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Request Data - PromptID: [999], ToneID: [12], Question70: [Tech innovations], Question243: [15], LanguageID: [22], IsChat: [0]
-14:00:26.015 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Response Headers: Server=nginx/1.22.0 (Ubuntu)
+17:12:22.148 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Content-ID: null
+17:12:22.148 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: {"error":"Please Enter a valid Prompt Id","message":"Please Enter a valid Prompt Id","type":"info"}
+17:12:22.150 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Executing Test Case: Invalid Language ID
+17:12:22.151 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Request Data - PromptID: [50], ToneID: [12], Question70: [Tech innovations], Question243: [15], LanguageID: [999], IsChat: [0]
+17:12:22.277 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Response Headers: Server=nginx/1.22.0 (Ubuntu)
 Content-Type=application/json
 Transfer-Encoding=chunked
 Connection=keep-alive
 Cache-Control=no-cache, private
-Date=Mon, 17 Mar 2025 08:30:23 GMT
+Date=Mon, 17 Mar 2025 11:42:19 GMT
 Access-Control-Allow-Origin=*
 Access-Control-Allow-Methods=POST, GET, OPTIONS, PUT, DELETE
 Access-Control-Allow-Headers=Content-Type, X-Auth-Token, Origin, Authorization
 X-RateLimit-Limit=120
 X-RateLimit-Remaining=100
 Access-Control-Expose-Headers=X-Engine-Id, content_id, Content-Type, Cache-Control
-14:00:26.015 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Content-ID: null
-14:00:26.015 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: {"error":"Please Enter a valid Prompt Id","message":"Please Enter a valid Prompt Id","type":"info"}
-14:00:26.018 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Executing Test Case: Invalid Language ID
-14:00:26.018 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Request Data - PromptID: [50], ToneID: [12], Question70: [Tech innovations], Question243: [15], LanguageID: [999], IsChat: [0]
-14:00:26.110 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Response Headers: Server=nginx/1.22.0 (Ubuntu)
+17:12:22.277 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Content-ID: null
+17:12:22.277 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: {"status":false,"data":null,"message":"SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`genie_db`.`contents`, CONSTRAINT `language_fk_8089055` FOREIGN KEY (`language_id`) REFERENCES `languages` (`id`)) (Connection: mysql, SQL: insert into `contents` (`user_id`, `prompt_id`, `tone_id`, `engine_id`, `language_id`, `is_mode`, `updated_at`, `created_at`) values (980150, 50, 12, 19, 999, 0, 2025-03-17 17:12:19, 2025-03-17 17:12:19))","type":"error","code":500,"response":"error"}
+17:12:22.279 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Executing Test Case: Empty Prompt
+17:12:22.279 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Request Data - PromptID: [0], ToneID: [12], Question70: [" "], Question243: [15], LanguageID: [22], IsChat: [0]
+17:12:22.371 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Response Headers: Server=nginx/1.22.0 (Ubuntu)
 Content-Type=application/json
 Transfer-Encoding=chunked
 Connection=keep-alive
 Cache-Control=no-cache, private
-Date=Mon, 17 Mar 2025 08:30:23 GMT
+Date=Mon, 17 Mar 2025 11:42:19 GMT
 Access-Control-Allow-Origin=*
 Access-Control-Allow-Methods=POST, GET, OPTIONS, PUT, DELETE
 Access-Control-Allow-Headers=Content-Type, X-Auth-Token, Origin, Authorization
 X-RateLimit-Limit=120
 X-RateLimit-Remaining=99
 Access-Control-Expose-Headers=X-Engine-Id, content_id, Content-Type, Cache-Control
-14:00:26.110 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Content-ID: null
-14:00:26.111 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: {"status":false,"data":null,"message":"SQLSTATE[23000]: Integrity constraint violation: 1452 Cannot add or update a child row: a foreign key constraint fails (`genie_db`.`contents`, CONSTRAINT `language_fk_8089055` FOREIGN KEY (`language_id`) REFERENCES `languages` (`id`)) (Connection: mysql, SQL: insert into `contents` (`user_id`, `prompt_id`, `tone_id`, `engine_id`, `language_id`, `is_mode`, `updated_at`, `created_at`) values (980150, 50, 12, 19, 999, 0, 2025-03-17 14:00:23, 2025-03-17 14:00:23))","type":"error","code":500,"response":"error"}
-14:00:26.112 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Executing Test Case: Valid Prompt with Disabled
-14:00:26.112 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Request Data - PromptID: [50], ToneID: [12], Question70: [Tech innovations], Question243: [15], LanguageID: [22], IsChat: [0]
-14:00:27.575 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Response Headers: Server=nginx/1.22.0 (Ubuntu)
-Content-Type=text/event-stream; charset=UTF-8
-Transfer-Encoding=chunked
-Connection=keep-alive
-Cache-Control=no-cache, private
-X-Engine-Id=19
-content_id=9318083
-Date=Mon, 17 Mar 2025 08:30:23 GMT
-Access-Control-Allow-Origin=*
-Access-Control-Allow-Methods=POST, GET, OPTIONS, PUT, DELETE
-Access-Control-Allow-Headers=Content-Type, X-Auth-Token, Origin, Authorization
-X-RateLimit-Limit=120
-X-RateLimit-Remaining=98
-Access-Control-Expose-Headers=X-Engine-Id, content_id, Content-Type, Cache-Control
-X-Frame-Options=SAMEORIGIN
-X-XSS-Protection=1; mode=block
-X-Content-Type-Options=nosniff
-14:00:27.575 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Content-ID: 9318083
-14:00:28.212 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: I understand. I'll generate image prompts based on the blog outline you provide, following the guidelines you've specified. Please share the blog outline, and I'll create the prompts accordingly.
-14:00:28.214 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Executing Test Case: Empty Prompt
-14:00:28.214 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Request Data - PromptID: [0], ToneID: [12], Question70: [" "], Question243: [15], LanguageID: [22], IsChat: [0]
-14:00:28.303 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Response Headers: Server=nginx/1.22.0 (Ubuntu)
-Content-Type=application/json
-Transfer-Encoding=chunked
-Connection=keep-alive
-Cache-Control=no-cache, private
-Date=Mon, 17 Mar 2025 08:30:25 GMT
-Access-Control-Allow-Origin=*
-Access-Control-Allow-Methods=POST, GET, OPTIONS, PUT, DELETE
-Access-Control-Allow-Headers=Content-Type, X-Auth-Token, Origin, Authorization
-X-RateLimit-Limit=120
-X-RateLimit-Remaining=97
-Access-Control-Expose-Headers=X-Engine-Id, content_id, Content-Type, Cache-Control
-14:00:28.303 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Content-ID: null
-14:00:28.304 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: {"error":"Please Enter a valid Prompt Id","message":"Please Enter a valid Prompt Id","type":"info"}
+17:12:22.371 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Content-ID: null
+17:12:22.371 [main] INFO  api.test.SinglePromptTests.ContentsNewTests - Stream Data: {"error":"Please Enter a valid Prompt Id","message":"Please Enter a valid Prompt Id","type":"info"}

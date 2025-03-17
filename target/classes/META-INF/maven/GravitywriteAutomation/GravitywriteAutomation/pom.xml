@@ -18,6 +18,12 @@
 						<suiteXmlFiles>
 							<suiteXmlFile>testng.xml</suiteXmlFile>
 						</suiteXmlFiles>
+						<systemPropertyVariables>
+							<MAVEN_TOTAL_TESTS>${surefire.total}</MAVEN_TOTAL_TESTS>
+							<MAVEN_PASSED_TESTS>${surefire.success}</MAVEN_PASSED_TESTS>
+							<MAVEN_FAILED_TESTS>${surefire.failure}</MAVEN_FAILED_TESTS>
+							<MAVEN_SKIPPED_TESTS>${surefire.skipped}</MAVEN_SKIPPED_TESTS>
+						</systemPropertyVariables>
 					</configuration>
 				</plugin>
 
